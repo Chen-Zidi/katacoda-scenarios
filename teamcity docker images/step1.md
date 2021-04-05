@@ -8,5 +8,6 @@ docker images
 ```
 
 ```
-docker run -it --name server -v teamcity/data:/data/teamcity_server/datadir -v teamcity/logs:opt/teamcity/logs -p 8111:8111 jetrains/teamcity-server
+docker run -it --name server -v /teamcity/data:/data/teamcity_server/datadir -v /teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
+
 ```

@@ -1,4 +1,4 @@
 mkdir -p teamcity
-mkdir -p /teamcity/data
-mkdir -p /teamcity/logs
-mkdir -p /teamcity/agent
+mkdir /teamcity/data
+mkdir /teamcity/logs
+mkdir /teamcity/agent
