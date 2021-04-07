@@ -1,13 +1,24 @@
-The first thing is set up teamcity server. We need to pull the server image from the docker hub repository.
-```
+The first thing is set up TeamCity server. We need to pull the server image from the Docker Hub repository. This might need a few minutes.
+```console
 docker pull jetbrains/teamcity-server
 ```
 We can view the images on the machine using this command
-```
+```console
 docker images
 ```
+The TeamCity server should be listed.
 
-```
+Now, we can run this command to start a Docker container with TeamCity server. 
+```console
 docker run -it --name server -v /teamcity/data:/data/teamcity_server/datadir -v /teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
 
 ```
+Here are some explanations of the command:
+- `-it`: We want an interactive session with a pseudo terminal.
+- `--name server`: We name this container "server". The name can be assigned as you like.
+- `-v /teamcity/data:/data/teamcity_server/datadir`: We bound /teamcity/data folder in our machine with TeamCity Data Directory. When you execute the command on your own machine, please create or specify your own folder.
+- `-v /teamcity/logs:/opt/teamcity/logs`:  We bound /teamcity/logs folder in our machine to store TeamCity logs. When you execute the command on your own machine, please create or specify your own folder.
+- `-p 8111:8111`: This is a map of the port between our machine and the container. You can use this command as `-p <host port>:8111`, and specify your own perferred port on your local machine.
+- `jetbrains/teamcity-server`: This is the name of the image.
+
+This might also need a few minutes. After execution of the command, we can open the dashboard to see the page of TeamCity. In your local machine, you can open the browser and access to `localhost:<host port>` to see the page.  
