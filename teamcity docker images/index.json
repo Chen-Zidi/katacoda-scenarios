@@ -2,7 +2,7 @@
   "title": "Run TeamCity on Docker",
   "description": "It describes how to creat, connect and use a TeamCity Server and an Agent based on Docker containers.",
   "difficulty": "Intermediate",
-  "time": "15 - 20 minutes",
+  "time": "20 - 25 minutes",
   "details": {
     "steps": [
       {

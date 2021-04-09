@@ -24,3 +24,8 @@ Here are some explanations of the command:
 - `jetbrains/teamcity-server`: This is the name of the image.
 
 This might also need a few minutes. After execution of the command, we can open the dashboard to see the page of TeamCity. In your local machine, you can open the browser and access to `localhost:<host port>` to see the page.  
+
+We can use this command in a new terminal to see the running Docker container.
+```console
+docker ps
+```
