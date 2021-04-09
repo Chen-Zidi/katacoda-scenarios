@@ -1,33 +1,29 @@
 {
-  "title": "use teamcity based on docker images",
-  "description": "It describes how to creat, connect and use a teamcity server and an agent based on docker images.",
+  "title": "Run TeamCity on Docker",
+  "description": "It describes how to creat, connect and use a TeamCity Server and an Agent based on Docker containers.",
   "difficulty": "Intermediate",
   "time": "15 - 20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Run TeamCity Server in Docker container",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Create a project and build steps in TeamCity",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Run TeamCity Agent in Docker container",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Build the project in TeamCity",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Check output",
         "text": "step5.md"
-      },
-      {
-        "title": "Step 6",
-        "text": "step6.md"
       }
     ],
     "intro": {

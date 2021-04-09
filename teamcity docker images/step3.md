@@ -1,0 +1,18 @@
+
+
+After configuring the project and the build step, we need to create a TeamCity Agent to spawn the build process. 
+
+Open a new terminal and run this command to pull TeamCity Agent Image:
+```
+docker pull jetbrains/teamcity-agent
+```
+
+Then, we can start a Docker container with TeamCity Agent which tries to connect with the TeamCity Server.
+```console
+docker run -it -e SERVER_URL="http://demo:8111" --link demo -v /teamcity/agent:/teamcity_agent/conf jetbrains/teamcity-agent
+```
+In this command:
+- `-e SERVER_URL="http://demo:8111"`: Set the environment variable `SERVER_URL`.
+- `--link demo`: Add link to the demo container.
+- `-v /teamcity/agent:/teamcity_agent/conf`: Specify the path of the agent config folder.
+- `jetbrains/teamcity-agent`: This is the name of the image.

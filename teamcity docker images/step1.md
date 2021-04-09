@@ -1,4 +1,6 @@
-The first thing is set up TeamCity server. We need to pull the server image from the Docker Hub repository. This might need a few minutes.
+
+
+The first thing is to set up TeamCity Server. We need to pull the server image from the Docker Hub repository. This might need a few minutes.
 ```console
 docker pull jetbrains/teamcity-server
 ```
@@ -6,9 +8,9 @@ We can view the images on the machine using this command
 ```console
 docker images
 ```
-The TeamCity server should be listed.
+The TeamCity Server should be listed.
 
-Now, we can run this command to start a Docker container with TeamCity server. 
+Now, we can run this command to start a Docker container with TeamCity Server. 
 ```console
 docker run -it --name server -v /teamcity/data:/data/teamcity_server/datadir -v /teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
 
