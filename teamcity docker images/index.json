@@ -40,12 +40,11 @@
     "showdashboard": true,
     "dashboard": "Dashboard",
     "uilayout": "terminal-iframe",
-    "dashboards": [{"name": "URL", "href": "http://localhost:8111"}]
+    "dashboards": [{"name": "TeamCity", "port": "8111"}]
     
 
   },
   "backend": {
-    "imageid": "ubuntu",
-    "port": "8111"
+    "imageid": "ubuntu"
   }
 }
