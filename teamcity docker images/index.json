@@ -38,7 +38,8 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboards": [{"name": "TeamCity", "href": "https://[[HOST_SUBDOMAIN]]-8111-[[KATACODA_HOST]].environments.katacoda.com"}],
+    "dashboards": [{"name": "TeamCity", "href": "https://[[HOST_SUBDOMAIN]]-8111-[[KATACODA_HOST]].environments.katacoda.com"},
+      {"name": "Port 8111", "port": 8111}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
