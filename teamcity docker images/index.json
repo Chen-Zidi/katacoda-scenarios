@@ -38,9 +38,8 @@
   },
   "environment": {
     "showdashboard": true,
-    "dashboard": "Dashboard",
     "uilayout": "terminal-iframe",
-    "dashboards": [{"name": "TeamCity", "port": "8111"}]
+    "dashboard": [{"name": "TeamCity", "href": "http://[[HOST_SUBDOMAIN]]-8111-[[KATACODA_HOST]].environments.katacoda.com"}]
     
 
   },
