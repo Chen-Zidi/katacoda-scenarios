@@ -32,6 +32,6 @@ This might also need a few minutes. After execution of the command, we can open 
 
 We can use this command in a new terminal to see the running Docker container.
 
-```console
+```
 docker ps
 ```
