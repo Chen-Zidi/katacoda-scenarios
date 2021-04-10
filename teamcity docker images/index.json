@@ -39,8 +39,8 @@
   "environment": {
     "showdashboard": true,
     "dashboard": "Dashboard",
-    "uilayout": "terminal-iframe"
-
+    "uilayout": "terminal-iframe",
+    "dashboards": [{"name": "URL", "href": "http://localhost:8111"}]
     
 
   },
