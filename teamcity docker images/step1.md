@@ -1,6 +1,8 @@
 
 
 The first thing is to set up TeamCity Server. We need to pull the server image from the Docker Hub repository. This might need a few minutes.
+
+
 ```console
 docker pull jetbrains/teamcity-server
 ```
@@ -11,10 +13,12 @@ docker images
 The TeamCity Server should be listed.
 
 Now, we can run this command to start a Docker container with TeamCity Server. 
+
 ```console
 docker run -it --name server -u 0 -v /teamcity/data:/data/teamcity_server/datadir -v /teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
 
 ```
+
 Here are some explanations of the command:
 - `-it`: We want an interactive session with a pseudo terminal.
 - `--name server`: We name this container "server". The name can be assigned as you like.
@@ -27,6 +31,7 @@ Here are some explanations of the command:
 This might also need a few minutes. After execution of the command, we can open the dashboard to see the page of TeamCity. In your local machine, you can open the browser and access to `localhost:<host port>` to see the page.  
 
 We can use this command in a new terminal to see the running Docker container.
+
 ```console
 docker ps
 ```
