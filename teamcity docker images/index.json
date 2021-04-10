@@ -45,7 +45,7 @@
 
   },
   "backend": {
-    "imageid": "ubuntu1904",
+    "imageid": "ubuntu",
     "port": "8111"
   }
 }
