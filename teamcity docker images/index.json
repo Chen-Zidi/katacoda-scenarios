@@ -37,7 +37,12 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
     "uilayout": "terminal-iframe"
+
+    
+
   },
   "backend": {
     "imageid": "ubuntu1904",
