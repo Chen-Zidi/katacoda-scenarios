@@ -9,7 +9,7 @@ docker pull jetbrains/teamcity-agent
 
 Then, we can start a Docker container with TeamCity Agent which tries to connect with the TeamCity Server.
 ```console
-docker run -it -e SERVER_URL="http://server:8111" --link server -u 0 -v /teamcity/agent:/teamcity_agent/conf jetbrains/teamcity-agent
+docker run -it -e SERVER_URL="http://server:8111" --link server -u root -v /teamcity/agent:/teamcity_agent/conf jetbrains/teamcity-agent
 ```
 In this command:
 - `-e SERVER_URL="http://server:8111"`: Set the environment variable `SERVER_URL`.
