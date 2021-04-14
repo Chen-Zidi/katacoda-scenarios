@@ -43,6 +43,7 @@
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "teamcity",
+    "port": 8111
   }
 }

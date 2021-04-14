@@ -5,11 +5,11 @@ The first thing is to set up TeamCity Server. We need to pull the server image f
 
 ```console
 docker pull jetbrains/teamcity-server
-```
+```{{execute}}
 We can view the images on the machine using this command
 ```console
 docker images
-```
+```{{execute}}
 The TeamCity Server should be listed.
 
 Now, we can run this command to start a Docker container with TeamCity Server. 
@@ -17,7 +17,7 @@ Now, we can run this command to start a Docker container with TeamCity Server.
 ```console
 docker run -it --name server -u root -v /teamcity/data:/data/teamcity_server/datadir -v /teamcity/logs:/opt/teamcity/logs -p 8111:8111 jetbrains/teamcity-server
 
-```
+```{{execute}}
 
 Here are some explanations of the command:
 - `-it`: We want an interactive session with a pseudo terminal.
