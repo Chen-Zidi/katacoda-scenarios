@@ -28,7 +28,7 @@ Here are some explanations of the command:
 - `-p 8111:8111`: This is a map of the port between our machine and the container. You can use this command as `-p <host port>:8111`, and specify your own perferred port on your local machine.
 - `jetbrains/teamcity-server`: This is the name of the image.
 
-This might also need a few minutes. After execution of the command, we can open ... to see the page of TeamCity. In your local machine, you can open the browser and access to `localhost:<host port>` to see the page.  
+This might also need a few minutes. After execution of the command, we can open http://[[HOST_SUBDOMAIN]]-8111-[[KATACODA_HOST]].environments.katacoda.com to see the page of TeamCity. In your local machine, you can open the browser and access to `localhost:<host port>` to see the page.  
 
 We can use this command in a new terminal to see the running Docker container.
 
