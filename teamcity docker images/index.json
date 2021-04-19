@@ -38,11 +38,12 @@
   },
   "environment": {
     "showdashboard": true,
-
+    "dashboards": [{"name": "TeamCity", "href": "http://[[HOST_SUBDOMAIN]]-8111-[[KATACODA_HOST]].environments.katacoda.com"},
+      {"name": "Port 8111", "port": 8111}],
     "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "ubuntu",
-    "port": 80
+    "imageid": "ubuntu:1804",
+
   }
 }
