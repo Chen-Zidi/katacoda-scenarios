@@ -1,0 +1,48 @@
+{
+  "title": "Testing Collections",
+  "description": "Goal: After completing this scenario, users will be able to checkout the source for a collection, make modifications and run CI locally",
+  "difficulty": "Beginner",
+  "time": "20 minute",
+  "details": {
+    "steps": [
+      {
+        "title": "Instructions",
+        "text": "instructions.md"
+      },
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideHiddenFiles": true,
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  }
+}
